@@ -1,0 +1,91 @@
+nav{
+    background-color: #FF003C;
+    .navbar{
+        .logo{ 
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .menu-list{
+            font-size: 17px;
+            
+            ul {
+                li{
+                    position: relative;
+                    align-self: center;
+                    &::after{
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background-color: white;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        transition: 0.7s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    a:hover{
+                        color: white;
+                    }
+                }
+                .act{
+                    &::after{
+                        display: none;
+                    }
+                    .actions{
+                        margin-left: 20px;
+                        background-color: #333 !important;
+                        gap: 30px;
+                        height: 45px;
+                        padding: 10px;
+                        font-size: 15px;
+                        .login,
+                        .basket{
+                            align-self: center;
+                            position: relative;
+                            .actual-count{
+                                display: inline-block;
+                                height: 17px;
+                                width: 17px;
+                                text-align: center;
+                                border-radius: 50%;
+                                background-color: white;
+                                font-size: 12px;
+                                position: absolute;
+                                left: 86%;
+                                top: -9px;
+                                color: #FF003C;
+                                font-weight: 700;
+                            }
+                            a{
+                                transition: 0.7s;
+                            }
+                            &::after{
+                                content: "";
+                                width: 0;
+                                height: 1px;
+                                background-color: white;
+                                position: absolute;
+                                left: 0;
+                                top: 100%;
+                                transition: 0.7s;
+                            }
+                            &:hover a{
+                                color: #FF003C;
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                }
+                
+            } 
+        }
+    }
+}

@@ -1,0 +1,56 @@
+#basket{
+    margin-top: 4%;
+    .basket-products{
+        .product-holder{
+            border-bottom: 1px solid rgb(172, 170, 170);
+        }
+        td{
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            .name{
+                font-size: 15px;
+                font-weight: 700;
+            }
+            img{
+                width: 100%;
+            }
+            .price{
+                color: #FF003C;
+                font-size: 18px;
+                font-weight: 600;
+                .currency{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            .remove-btn{
+                border: none;
+                background-color: inherit;
+                i{
+                    color: #FF003C;
+                }
+            }
+            .count{
+                .count-box{
+                    .count-holder{
+                        width: 25px;
+                        font-size: 15px;
+                        border: 1px solid;
+                        height: 30px;
+                    }
+                    button{
+                        border: none;
+                        background-color: inherit;
+                    }
+                    .less i{
+                        color: red;
+                    }
+                    .more i{
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}

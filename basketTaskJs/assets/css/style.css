@@ -1,0 +1,242 @@
+nav {
+  background-color: #FF003C;
+}
+
+nav .navbar .logo a img {
+  width: 100%;
+}
+
+nav .navbar .menu-list {
+  font-size: 17px;
+}
+
+nav .navbar .menu-list ul li {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .navbar .menu-list ul li::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+nav .navbar .menu-list ul li:hover::after {
+  width: 100%;
+}
+
+nav .navbar .menu-list ul li a:hover {
+  color: white;
+}
+
+nav .navbar .menu-list ul .act::after {
+  display: none;
+}
+
+nav .navbar .menu-list ul .act .actions {
+  margin-left: 20px;
+  background-color: #333 !important;
+  gap: 30px;
+  height: 45px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+nav .navbar .menu-list ul .act .actions .login,
+nav .navbar .menu-list ul .act .actions .basket {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+}
+
+nav .navbar .menu-list ul .act .actions .login .actual-count,
+nav .navbar .menu-list ul .act .actions .basket .actual-count {
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 12px;
+  position: absolute;
+  left: 86%;
+  top: -9px;
+  color: #FF003C;
+  font-weight: 700;
+}
+
+nav .navbar .menu-list ul .act .actions .login a,
+nav .navbar .menu-list ul .act .actions .basket a {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+nav .navbar .menu-list ul .act .actions .login::after,
+nav .navbar .menu-list ul .act .actions .basket::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+nav .navbar .menu-list ul .act .actions .login:hover a,
+nav .navbar .menu-list ul .act .actions .basket:hover a {
+  color: #FF003C;
+}
+
+nav .navbar .menu-list ul .act .actions .login:hover::after,
+nav .navbar .menu-list ul .act .actions .basket:hover::after {
+  width: 100%;
+}
+
+#products {
+  margin-top: 4%;
+}
+
+#products .products {
+  padding: 20px;
+}
+
+#products .products .card-item {
+  text-align: center;
+  border: 1px solid #cdbfbf;
+  cursor: pointer;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 23%;
+  background-color: white;
+}
+
+#products .products .card-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#products .products .card-item .imgBox {
+  padding: 20px;
+  overflow: hidden;
+}
+
+#products .products .card-item .imgBox img {
+  width: 100%;
+}
+
+#products .products .card-item .about-product {
+  color: #333;
+}
+
+#products .products .card-item .about-product h2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#products .products .card-item .about-product .product-price {
+  color: #FF003C;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px;
+}
+
+#products .products .product-add {
+  width: 50%;
+  height: 40px;
+  border: none;
+  background-color: #333;
+  border-radius: 5%;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#products .products .product-add:hover {
+  background-color: #FF003C;
+}
+
+#basket {
+  margin-top: 4%;
+}
+
+#basket .basket-products .product-holder {
+  border-bottom: 1px solid #acaaaa;
+}
+
+#basket .basket-products td {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+#basket .basket-products td .name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#basket .basket-products td img {
+  width: 100%;
+}
+
+#basket .basket-products td .price {
+  color: #FF003C;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#basket .basket-products td .price .currency {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#basket .basket-products td .remove-btn {
+  border: none;
+  background-color: inherit;
+}
+
+#basket .basket-products td .remove-btn i {
+  color: #FF003C;
+}
+
+#basket .basket-products td .count .count-box .count-holder {
+  width: 25px;
+  font-size: 15px;
+  border: 1px solid;
+  height: 30px;
+}
+
+#basket .basket-products td .count .count-box button {
+  border: none;
+  background-color: inherit;
+}
+
+#basket .basket-products td .count .count-box .less i {
+  color: red;
+}
+
+#basket .basket-products td .count .count-box .more i {
+  color: green;
+}
+
+body {
+  color: #333;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
