@@ -21,7 +21,7 @@ if (table) {
                 <div class="count text-center d-flex flex-column gap-2">
                     <span>Miqdar:</span>
                    <div class="count-box">
-                       <button class="less"><i class="fas fa-minus"></i></button>
+                       <button class="less" data-id="${obj.id}"><i class="fas fa-minus"></i></button>
                        <span class="count-holder d-inline-block">${obj.count}</span>
                        <button class="more"><i class="fas fa-plus"></i></button>
                    </div>
@@ -77,6 +77,6 @@ document.querySelectorAll(".remove-btn").forEach((btn)=>{
         let currentBasket=JSON.parse(localStorage.getItem("basket"))
         let newBasket=currentBasket.filter(item=>item.dataId!==this.getAttribute("data-id"))
         localStorage.setItem("basket",JSON.stringify(newBasket))
+        document.querySelector(".actual-count").innerText=JSON.parse(localStorage.getItem("basket")).length
     })
 })
-
