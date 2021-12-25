@@ -11,17 +11,17 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="main-nav">
             <div class="container">
                 <div class="row">
                     <div class="navbar d-flex align-items-center justify-content-between">
                         <div class="col-md-2 logo">
-                           <a href="#">
+                           <a href="./index.html">
                             <img src="./assets/images/k2020.webp" alt="">
                            </a>
                         </div>
-                        <div class="col-md-5 menu-list ">
-                            <ul class="list-unstyled d-flex justify-content-evenly m-0">
+                        <div class="col-md-8 menu-list d-flex justify-content-evenly">
+                            <ul class="list-unstyled d-flex justify-content-center gap-3 m-0">
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
@@ -40,9 +40,15 @@
                                 <li class="act">
                                     <div class="actions d-flex rounded">
                                         <div class="login">
-                                            <a href="">
+                                            <a href="" class="nav-login">
                                                 <span>Daxil ol</span>
                                                 <i class="fas fa-sign-in-alt"></i>
+                                            </a>
+                                        </div>
+                                        <div class="logout">
+                                            <a href="" class="nav-logout">
+                                                <span>Cixis</span>
+                                                <i class="fas fa-sign-out-alt"></i>
                                             </a>
                                         </div>
                                         <div class="basket">
@@ -54,6 +60,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -61,6 +68,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         
         <section id="products">
@@ -68,41 +76,41 @@
                 <div class="row products justify-content-evenly">
                     <div class="col-md-3 card-item" data-id="1">
                         <div class="imgBox">
-                            <img src="./assets/images/HUAWEI-WATCH-GT-Sports-Smart-Watch-Orange-849642-.jpg" alt="">
+                            <img src="./assets/images/HUAWEI-WATCH-FIT-Mint-Green.jpg" alt="">
                         </div>
                         <div class="about-product">
-                           <h2 class="product-name">HUAWEI WATCH GT Sports Smart Watch Orange</h2>
-                           <span class="product-price">500</span>
+                           <h2 class="product-name">Smart saat HUAWEI WATCH FIT Mint Green</h2>
+                           <span class="product-price">219</span>
                         </div>
                         <button class="product-add" data-btn="1">Add</button>
                     </div>
                     <div class="col-md-3 card-item" data-id="2">
                         <div class="imgBox">
-                            <img src="./assets/images/HUAWEI-WATCH-GT-Sports-Smart-Watch-Orange-849642-.jpg" alt="">
+                            <img src="./assets/images/HUAWEI-WATCH-GT-2-Matte-Black.jpg" alt="">
                         </div>
                         <div class="about-product">
-                           <h2 class="product-name">HUAWEI WATCH GT Sports Smart Watch Orange</h2>
-                           <span class="product-price">600</span>
+                           <h2 class="product-name">Smart saat HUAWEI WATCH GT 2 Matte Black</h2>
+                           <span class="product-price">399</span>
                         </div>
                         <button class="product-add" data-btn="2" type="button">Add</button>
                     </div>
                     <div class="col-md-3 card-item" data-id="3">
                         <div class="imgBox">
-                            <img src="./assets/images/HUAWEI-WATCH-GT-Sports-Smart-Watch-Orange-849642-.jpg" alt="">
+                            <img src="./assets/images/HUAWEI-WATCH-GT-2-Pro-Nebula-Grey.jpg" alt="">
                         </div>
                         <div class="about-product">
-                           <h2 class="product-name">HUAWEI WATCH GT Sports Smart Watch Orange</h2>
-                           <span class="product-price">899.99</span>
+                           <h2 class="product-name">Smart saat HUAWEI WATCH GT 2 Pro Nebula Grey</h2>
+                           <span class="product-price">659</span>
                         </div>
                         <button class="product-add" data-btn="3">Add</button>
                     </div>
                     <div class="col-md-3 card-item" data-id="4">
                         <div class="imgBox">
-                            <img src="./assets/images/HUAWEI-WATCH-GT-Sports-Smart-Watch-Orange-849642-.jpg" alt="">
+                            <img src="./assets/images/HUAWEI-WATCH-GT-3-46MM-Classic.jpg" alt="">
                         </div>
                         <div class="about-product">
-                           <h2 class="product-name">HUAWEI WATCH GT Sports Smart Watch Orange</h2>
-                           <span class="product-price">799</span>
+                           <h2 class="product-name">Smart saat HUAWEI WATCH GT 3 46MM Classic</h2>
+                           <span class="product-price">599</span>
                         </div>
                         <button class="product-add" data-btn="4">Add</button>
                     </div>
@@ -110,6 +118,49 @@
             </div>
         </section>
 
+        <section id="login" class="flex-column align-items-center">
+            <div class="alert alert-success d-none" role="alert">
+                Ugurlu Qeydiyyat!
+              </div>
+            <div class="login-box m-auto">
+                <span class="alert-incorrect-login">Yanlış Şifrə vəya İstifadəçi adı!</span>
+                <div class="username-box">
+                    <label for="existUsername">İstifadəçi adı</label>
+                    <input type="text" id="existUsername">
+                </div>
+                <div class="password-box">
+                    <label for="existPassword">Şifrə</label>
+                    <input type="password" id="existPassword">
+                </div>
+                <div class="loginButton align-self-center">
+                    <button class="login-btn  rounded">Daxil ol</button>
+                </div>
+                <div class="new-user align-self-center">
+                    <span>Hesabin yoxdur?</span>
+                    <button class="register rounded">Qeydiyyat</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+           <div class="container">
+               <div class="row justify-content-center">
+                <form action="" class="col-md-4" autocomplete="off">
+                    <span class="alert-empty-input">Butun saheleri doldurun</span>
+                    <label for="name">Ad:</label>
+                    <input type="text" id="name">
+                    <label for="lastName">Soyad:</label>
+                    <input type="text" id="lastName">
+                    <label for="username">İstifadəçi adı:</label>
+                    <input type="text" id="username">
+                    <label for="password">Şifrə:</label>
+                    <input type="text" id="password">
+                    <button class="register-btn rounded" type="button" >Qeydiyyat</button>
+                    <span class="alert-exist-username">Bu İstifadəçi adindan artiq var!</span>
+                </form>
+               </div>
+           </div>
+        </section>
     </main>
     <script src="./js/index.js"></script>
 </body>

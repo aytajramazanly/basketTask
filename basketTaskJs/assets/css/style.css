@@ -10,6 +10,16 @@ nav .navbar .menu-list {
   font-size: 17px;
 }
 
+nav .navbar .menu-list .userInfo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+  display: none;
+}
+
 nav .navbar .menu-list ul li {
   position: relative;
   -ms-flex-item-align: center;
@@ -51,6 +61,7 @@ nav .navbar .menu-list ul .act .actions {
 }
 
 nav .navbar .menu-list ul .act .actions .login,
+nav .navbar .menu-list ul .act .actions .logout,
 nav .navbar .menu-list ul .act .actions .basket {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -59,6 +70,7 @@ nav .navbar .menu-list ul .act .actions .basket {
 }
 
 nav .navbar .menu-list ul .act .actions .login .actual-count,
+nav .navbar .menu-list ul .act .actions .logout .actual-count,
 nav .navbar .menu-list ul .act .actions .basket .actual-count {
   display: inline-block;
   height: 17px;
@@ -75,12 +87,14 @@ nav .navbar .menu-list ul .act .actions .basket .actual-count {
 }
 
 nav .navbar .menu-list ul .act .actions .login a,
+nav .navbar .menu-list ul .act .actions .logout a,
 nav .navbar .menu-list ul .act .actions .basket a {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
 nav .navbar .menu-list ul .act .actions .login::after,
+nav .navbar .menu-list ul .act .actions .logout::after,
 nav .navbar .menu-list ul .act .actions .basket::after {
   content: "";
   width: 0;
@@ -94,11 +108,13 @@ nav .navbar .menu-list ul .act .actions .basket::after {
 }
 
 nav .navbar .menu-list ul .act .actions .login:hover a,
+nav .navbar .menu-list ul .act .actions .logout:hover a,
 nav .navbar .menu-list ul .act .actions .basket:hover a {
   color: #FF003C;
 }
 
 nav .navbar .menu-list ul .act .actions .login:hover::after,
+nav .navbar .menu-list ul .act .actions .logout:hover::after,
 nav .navbar .menu-list ul .act .actions .basket:hover::after {
   width: 100%;
 }
@@ -230,6 +246,138 @@ nav .navbar .menu-list ul .act .actions .basket:hover::after {
 
 #basket .basket-products td .count .count-box .more i {
   color: green;
+}
+
+#login {
+  margin-top: 10%;
+  display: none;
+}
+
+#login .login-box {
+  width: 384px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#login .login-box .alert-incorrect-login {
+  font-size: 15px;
+  color: red;
+  margin-left: 95px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#login .login-box label {
+  width: 90px;
+  text-align: center;
+}
+
+#login .login-box input {
+  border: 0.5px solid gray;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+#login .login-box .login-btn {
+  width: 100px;
+  border: 1px solid;
+  height: 35px;
+  background-color: #333;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#login .login-box .login-btn:hover {
+  background-color: #cc4a4a;
+}
+
+#login .login-box .new-user .register {
+  font-size: 12px;
+  width: 80px;
+  height: 27px;
+  border: 1px solid;
+  background-color: #333;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#register {
+  margin-top: 7%;
+  display: none;
+}
+
+#register form {
+  position: relative;
+}
+
+#register label {
+  color: #333;
+  font-weight: 500;
+  float: left;
+  width: 110px;
+  margin-top: 10px;
+}
+
+#register input {
+  margin-bottom: 30px;
+  padding: 5px 20px;
+  font-size: 14px;
+  display: block;
+  outline: none;
+  width: 285px;
+}
+
+#register .register-btn {
+  margin-top: 20px;
+  width: 100px;
+  border: 1px solid;
+  height: 35px;
+  background-color: #333;
+  color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#register .disabled {
+  background-color: #9b9999;
+  cursor: default;
+}
+
+#register .alert-empty-input {
+  color: red;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  top: -40px;
+  left: 155px;
+}
+
+#register .alert-exist-username {
+  opacity: 0;
+  color: red;
+  position: absolute;
+  top: 105px;
+  left: 159px;
+  font-size: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body {

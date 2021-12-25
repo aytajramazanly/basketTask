@@ -1,0 +1,53 @@
+#register{
+    margin-top: 7%;
+    display: none;
+    form{
+        position: relative;
+    }
+    label{
+        color: #333;
+        font-weight: 500;
+        float: left;
+        width: 110px;
+        margin-top: 10px;
+    }
+    input{
+        margin-bottom: 30px;
+        padding: 5px 20px;
+        font-size: 14px;
+        display: block;
+        outline: none;
+        width: 285px;
+    }
+    .register-btn{
+        margin-top: 20px;
+        width: 100px;
+        border: 1px solid;
+        height: 35px;
+        background-color: #333;
+        color: white;
+        transition: 0.7s;
+    }
+    .disabled{
+        background-color: rgb(155, 153, 153);
+        cursor: default;
+    }
+    .alert-empty-input{
+       color: red; 
+       display: inline-block;
+       opacity: 0;
+       transition: 0.5s;
+       position: absolute;
+       top: -40px;
+       left: 155px;
+    }
+    .alert-exist-username{
+        opacity: 0;
+        color: red;
+        position: absolute;
+        top: 105px;
+        left: 159px;
+        font-size: 15px;
+        transition: 0.5s;
+    }
+}

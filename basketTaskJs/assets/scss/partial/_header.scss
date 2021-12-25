@@ -10,7 +10,6 @@ nav{
         }
         .menu-list{
             font-size: 17px;
-            
             ul {
                 li{
                     position: relative;
@@ -44,6 +43,7 @@ nav{
                         padding: 10px;
                         font-size: 15px;
                         .login,
+                        .logout,
                         .basket{
                             align-self: center;
                             position: relative;
@@ -84,7 +84,6 @@ nav{
 
                     }
                 }
-                
             } 
         }
     }
